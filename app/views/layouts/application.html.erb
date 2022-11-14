@@ -1,22 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt" class="h-100">
   <head>
-    <title>Adicionatec</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Adicionatec é uma empresa de desenvolvimento de software, consultoria e ">
+    <meta name="author" content="Vicente Simão, Vicente, Adicionatec">
+    <title>Adicionatec Analise e Desenvolvimento de Sistemas</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
   </head>
 
-  <body>
-    <%= render "layouts/header" %>
-    <%= render "layouts/service" %>
-    <%= render "layouts/about" %>
-    <%= render "layouts/contact" %>
-    <%= render "layouts/portifolio" %>
-    <%= yield %>
-    <%= render "layouts/footer" %>
+  <body class="d-flex flex-column h-100">
+    <main>
+      <%= render "layouts/header" %>
+      <%= render "layouts/introduction" %>
+      <%= render "layouts/service" %>
+      <%= render "layouts/about" %>
+      <%= render "layouts/contact" %>
+      <%= render "layouts/portifolio" %>
+      
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </main>
   </body>
 </html>
+
+
