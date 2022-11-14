@@ -9,11 +9,6 @@ body {
   background-color: #fafafa ;
 }
 
-main > .container {
-  padding: 60px 15px 0;
-}
-
-
 .pink-lighten-1{
   color: #ec407a !important;  
 }
